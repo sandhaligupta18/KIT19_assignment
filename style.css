@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  border-radius: 2px;
+background-color: rgb(213, 218, 218);
+   align-items: center;
+   height: 30vh;
+}
+
+.form label, .form select, .form input {
+    margin: 0px 10px 0px 10px;
+}
+
+.form select{
+    height: 40px;
+}
+
+.form input{
+    height:  40px;
+}
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: darkcyan;
+    border-style:solid;
+    width: 8vw;
+    border-radius: 2px;
+   
+}
+.btn{
+    display:  flex ;
+    justify-content: center;
+   
+}

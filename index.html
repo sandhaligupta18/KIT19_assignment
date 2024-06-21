@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Data Dynamically in Table</h2>
+        <div class="form">
+            <label for="field">Field:</label>
+            <select id="field">
+                <option value="">-- Select Field --</option>
+                <option value="Empname">Empname</option>
+                <option value="Department">Department</option>
+                <option value="Joining Date">Joining Date</option>
+                <option value="Salary">Salary</option>
+            </select>
+            <label for="operator">Operator:</label>
+            <select id="operator">
+                <option value="">-- Select Operator --</option>
+                <option value="contains">Contains</option>
+                <option value="start_with">Start with</option>
+                <option value="end_with">End with</option>
+                <option value="=">=</option>
+                <option value="!=">!=</option>
+                <option value=">">></option>
+                <option value=">=">>=</option>
+                <option value="<"><</option>
+                <option value="<="><=</option>
+                <option value="not_contains">Not Contains</option>
+            </select>
+            <label for="value">Value:</label>
+            <input type="text" id="value">
+            <label for="conjunction">Conjunction:</label>
+            <select id="conjunction">
+                <option value="And">And</option>
+                <option value="Or">Or</option>
+            </select>
+        
+        </div>
+        <div class="btn"><button id="addBtn" onclick="addCondition()">Add</button></div>
+        <table id="conditionsTable">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Fieldname</th>
+                    <th>Operator</th>
+                    <th>Value</th>
+                    <th>Conjunction</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--  rows will be added here -->
+            </tbody>
+        </table>
+      <div class="btn">  <button id="saveBtn" onclick="saveConditions()">Save</button></div>
+        <pre id="jsonOutput"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
